@@ -63,7 +63,7 @@ def main(dir_content, dir_style):
 
     content_name = dir_content.split('\\')[-1].split('.')[0]
     style_name = dir_style.split('\\')[-1].split('.')[0]
-
+    # Utilize directories of style and content images
     #content_image = preprocess(params.content_image, params.image_size).type(dtype)
     content_image = preprocess(dir_content, params.image_size).type(dtype)
 
